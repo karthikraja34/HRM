@@ -27,7 +27,7 @@ module.exports = function (req, res, next) {
     if (user.isAdmin) {
       return next();
     } else {
-      return ResponseService.json(401, res, "Only Admin or Manager can Perform this function");
+      return ResponseService.json(401, res, "Only Admin  can Perform this function");
     }
   });
 
