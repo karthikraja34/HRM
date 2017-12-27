@@ -54,6 +54,8 @@ _This route needs username as parameter_
 #TO RUN APPLICATION
 
 use ``` javascript
+
+```
 sails lift
-``` 
+ 
 to run the application.
