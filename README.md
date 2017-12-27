@@ -4,6 +4,7 @@ A sample RESTful web service for a Human Resource Management software.
 a [Sails](http://sailsjs.org) application
 
 # Note 
+**For demo purposes this application uses mlab mongoDb**
 All routes needs authorisation header.To get token you need to login.
 login route 
 http://localhost:1337/login
