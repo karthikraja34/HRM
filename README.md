@@ -42,8 +42,8 @@ _This route needs paramaters_
 PUT ROUTE
 http://localhost:1337/update
 
-*In this route, it uses username to search for records and used to change fields other than username*
-_This route needs username parameter as must and remaining paramaters as optional in which username cannot be changed_
+**In this route, it uses username to search for records and used to change fields other than username.**
+_This route needs username parameter as must and remaining paramaters are optional in which username cannot be changed_
 
 * Delete
 DELETE ROUTE
