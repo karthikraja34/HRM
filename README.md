@@ -24,9 +24,16 @@ http://localhost:1337/login
 
 Sample login info
 
+```
+**Admin**
 username: admin
 password: password
 
+**Manager**
+username: manager
+password: password
+
+```
 ## Parameters
 
 The attributes of the model is

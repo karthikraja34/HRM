@@ -21,7 +21,7 @@ module.exports = {
       username: req.body.username
     }).exec(function (err,users) {
       if (err) {
-        return ResponseService.json(404, res, "Operation is not performed", err.Errors)
+        return ResponseService.json(404, res, "Operation is not performed", err)
       }
 
       return ResponseService.json(200, res, "User deleted successfully",users)
@@ -54,7 +54,7 @@ module.exports = {
     
           if (err) {
            
-            return ResponseService.json(404, res, "User not found", err.Errors)
+            return ResponseService.json(404, res, "User not found", err)
           }
     
           return ResponseService.json(200, res, "User details updated successfully",users)
@@ -87,7 +87,7 @@ module.exports = {
       // Creating a new user
       User.create(data).exec(function (err, user) {
         if (err) {
-          return ResponseService.json(400, res, "User could not be created", err.Errors)
+          return ResponseService.json(400, res, "User could not be created", err)
         }
         var responseData = {
           user: user,
