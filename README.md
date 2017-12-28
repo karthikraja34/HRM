@@ -31,10 +31,10 @@ password: password
 
 The attributes of the model is
 
-* username  -   string 
-* password  -   string
-* isAdmin   -   boolean // set 'true' to make a user as admin
-* isManager -   boolean // set 'false' to make a user as manager
+* username  -   string (must be unique)
+* password  -   string (min 6 characters)
+* isAdmin   -   boolean // ( default : false | set 'true' to make a user as admin)
+* isManager -   boolean // ( default : false | set 'false' to make a user as manager)
 
 # Routes
 
