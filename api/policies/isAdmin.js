@@ -23,7 +23,7 @@ module.exports = function (req, res, next) {
       return res.notFound('Only Admin can Perform this function');
     }
 
-
+    
     if (user.isAdmin) {
       return next();
     } else {

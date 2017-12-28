@@ -1,9 +1,22 @@
-### hrm-soft
+# hrm-soft
 A sample RESTful web service for a Human Resource Management software. 
 
 a [Sails](http://sailsjs.org) application
 
-# Note 
+## Web Service Requirements
+The human resource management software allows a HR manager to manage a list of employees within their company. The software allows for the following roles, each with different levels of permissions:
+
+1. Administrators - They are the root level users in the system and have access to do everything. Only administrators can create managers.
+2. Managers - Managers can only view / edit / delete employees.
+3. Employees - Employees are records in the database and do not have the power to do anything.
+
+* Create an API to allow an administrator to create a manager
+* Create 3 APIs to allow managers & administrators to view / edit / delete employees
+
+**Remember:** Administrators can perform all the functions of the manager but managers cannot perform the function of the administrator (create new managers).
+
+
+## Note 
 **For demo purposes this application uses mlab mongoDb**
 All routes needs authorisation header.To get token you need to login.
 login route 
@@ -14,7 +27,7 @@ Sample login info
 username: admin
 password: password
 
-# Parameters
+## Parameters
 
 The attributes of the model is
 
@@ -52,11 +65,11 @@ http://localhost:1337/delete
 
 _This route needs username as parameter_ 
 
-#TO RUN APPLICATION
+## TO RUN APPLICATION
 
 use 
 
 ```
 sails lift
-
+```
 to run the application.
